@@ -32,18 +32,18 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1400px;
+  max-width: 1200px;
 }
 
 .hero {
   padding: 0 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .hero-prim {
-  margin-top: 70vh;
+  margin-top: 50px;
   color: var(--main);
   font-size: 2.5rem;
   max-width: 50%;
@@ -53,8 +53,12 @@ body {
   color: var(--main);
 }
 
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
 .nav-bar {
-  margin-top: 25vh;
+  margin-top: 15vh;
   text-align: left;
   max-width: 50%;
 }
@@ -65,7 +69,7 @@ body {
 
 .about-me {
   text-align: left;
-  margin-top: 100px;
+  margin-top: 50px;
   color: var(--main);
   font-size: 1.5rem;
 }
@@ -74,12 +78,36 @@ body {
   padding: 8px 0;
 }
 
-@media screen and (max-width: 768px) {
+.socials {
+  text-align: left;
+  margin-top: 50px;
+}
+
+.socials a {
+  color: var(--main);
+}
+
+.socials a:hover {
+  text-decoration: underline;
+}
+
+.socials li {
+  padding: 4px 5px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 786px) {
   .hero {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
   }
+
   .hero-prim {
-    margin-top: 50px;
+    margin-top: 65vh;
+  }
+
+  .hero-sec {
+    margin-top: 18.3vh;
   }
 }
