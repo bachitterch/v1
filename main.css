@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
+:root {
+  --bg: #131313;
+  --main: #ECECEC;
+}
+
 *,
 *::before,
 *::after {
@@ -8,12 +13,20 @@
 	padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   text-align: center;
   width: 100%;
   height: 100vh;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(255,255,255,1) 50%);
+  background: var(--bg);
+  font-size: 1rem;
 }
 
 .container {
@@ -24,24 +37,49 @@ body {
 
 .hero {
   padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .hero-prim {
-  position: relative;
-  top: 25vh;
-  color: rgb(0, 0, 0);
+  margin-top: 70vh;
+  color: var(--main);
   font-size: 2.5rem;
+  max-width: 50%;
 }
 
-.hero-sec {
-  position: relative;
-  top: 70vh;
-  color: rgb(255, 255, 255);
-  font-size: 2.5rem;
+.nav-bar a {
+  color: var(--main);
 }
 
-@media screen and (max-width:450px) {
-    .hero-sec {
-      word-wrap: break-word;
-    }  
+.nav-bar {
+  margin-top: 25vh;
+  text-align: left;
+  max-width: 50%;
+}
+
+.nav-bar li {
+  padding: 8px 0;
+}
+
+.about-me {
+  text-align: left;
+  margin-top: 100px;
+  color: var(--main);
+  font-size: 1.5rem;
+}
+
+.about-me li {
+  padding: 8px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-prim {
+    margin-top: 50px;
+  }
 }
