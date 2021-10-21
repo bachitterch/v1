@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #e7dfcf;
+  --main: #2c2d2a;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+*,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: #2c2d2a;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  background: var(--bg);
+  font-size: 0.938rem;
+  font-family: "Montserrat", sans-serif;
+  color: var(--main);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 15px 20px;
+}
+
+.main-nav {
+  position: relative;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(44, 45, 42, 0.25);
+  padding-bottom: 12px;
+  background-color: var(--bg);
+}
+
+.logo {
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.navbar {
+  display: flex;
+
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.navbar li {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .main-nav {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+.hero-cta {
+  border: 1px solid var(--main);
+  max-width: 200px;
+  padding: 12px 30px;
+  text-align: center;
+  display: block;
+}
+
+.hero-cta:hover {
+  cursor: pointer;
+  color: var(--bg);
+  background-color: var(--main);
+}
+
+@media screen and (max-width: 768px) {
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.063rem;
+  }
+  
+}
+
+@media screen and (max-width: 515px) {
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 0.875rem;
+  }
+}
