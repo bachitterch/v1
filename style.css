@@ -81,9 +81,12 @@ body {
   padding: 15px 20px;
 }
 
+
+/* Main Navigation */
+
 .main-nav {
   position: relative;
-  padding: 0 20px;
+  padding: 0 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,6 +100,10 @@ body {
   font-size: 1.375rem;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+.logo:hover {
+  cursor: default;
 }
 
 .nav__list {
@@ -157,17 +164,16 @@ body {
     } 
 }
 
+
+/* Hero Section */
+
 .hero {
-  min-height: 90vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-.content {
-  padding: 0 20px;
 }
 
 .hero h1 {
@@ -212,4 +218,71 @@ body {
   .hero p {
     font-size: 0.855rem;
   }
+}
+
+
+/* About Me */
+
+.about__ct {
+  display: flex;
+}
+
+.about__text {
+  max-width: 670px;
+}
+
+.ab_h1 {
+  font-size: 2.7rem;
+}
+
+.ab_p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.ab_link {
+  text-decoration: underline;
+}
+
+.ab_link:hover {
+  padding: 1px;
+  margin: 1px;
+  border: 1px solid var(--main);
+  text-decoration: none;
+}
+
+.socials {
+  margin-top: 15px;
+  font-size: 1.2rem;
+}
+
+.socials__h2 {
+  font-size: 2.3rem;
+}
+
+.socials_link {
+  font-size: 1.3rem;
+  margin-right: 10px;
+  color: var(--bg);
+  background-color: var(--main);
+  padding: 10px;
+}
+
+.socials_link:hover {
+  color: var(--main);
+  background-color: transparent;
+  border: 1px solid var(--main);
+}
+
+.skills {
+  margin-top: 15px;
+}
+
+.skills h2 {
+  font-size: 2.3rem;
+}
+
+.skill {
+  font-size: 2.5rem;
+  margin-right: 10px;
 }
