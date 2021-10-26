@@ -127,6 +127,7 @@ body {
 
   .main-nav {
     height: 45px;
+    border: none;
   }
 
   .main-nav div {
@@ -149,6 +150,9 @@ body {
     flex-direction: column;
     z-index: 50;
     transition: right 1s ease-in-out;
+    -o-transition: right 1s ease-in-out;
+    -moz-transition: right 1s ease-in-out;
+    -webkit-transition: right 1s ease-in-out;
   }
 
   .nav__list a {
@@ -181,12 +185,16 @@ body {
   align-items: center;
 }
 
+.h-text {
+  margin-top: -50px;
+}
+
 .hero h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .hero p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 24px;
 }
 
@@ -234,10 +242,19 @@ body {
 
 .about__text {
   max-width: 670px;
+  margin-right: 35px;
 }
 
 .ab_h1 {
   font-size: 2.7rem;
+}
+
+.about__img {
+  max-width: 250px;
+}
+
+.about__img img {
+  border-radius: 50%;
 }
 
 .ab_p {
@@ -257,8 +274,14 @@ body {
 }
 
 .socials {
-  margin-top: 15px;
+  margin-top: -80px;
   font-size: 1.2rem;
+}
+
+.social__links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .socials__h2 {
@@ -267,6 +290,7 @@ body {
 
 .socials_link {
   font-size: 1.3rem;
+  margin-top: 5px;
   margin-right: 10px;
   color: var(--bg);
   background-color: var(--main);
@@ -290,4 +314,73 @@ body {
 .skill {
   font-size: 2.5rem;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .about__ct {
+    flex-direction: column;
+  }
+
+  .about__img {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .socials {
+    margin-top: 0;
+  }
+}
+
+.work {
+  margin: 80px 0 50px 0;
+}
+
+.work__h1 {
+  font-size: 2.7rem;
+}
+
+.project__h3 {
+  font-size: 1.3rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.project {
+  border: 2px solid var(--main);
+  padding: 30px;
+  margin: 30px;
+}
+
+.mockup {
+  margin: 30px;
+  max-width: 500px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .projects {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .project {
+    margin: 10px;
+  }
+
+  .work__h1 {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .work__h1 {
+    font-size: 2rem;
+  }
 }
