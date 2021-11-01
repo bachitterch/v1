@@ -66,6 +66,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   background: var(--bg);
@@ -341,6 +345,8 @@ body {
   }
 }
 
+/* Work */
+
 .work {
   margin: 80px 0 50px 0;
 }
@@ -394,6 +400,8 @@ body {
     font-size: 2rem;
   }
 }
+
+/* Contact */
 
 .contact__h1 {
   font-size: 2.7rem;
@@ -489,6 +497,8 @@ form textarea {
   }
 }
 
+/* Footer */
+
 footer {
   margin-top: 20px;
 }
@@ -504,6 +514,7 @@ footer {
   text-decoration: underline;
 }
 
+/* Back to Top Button */
 
 .btop {
   display: none;
