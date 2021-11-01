@@ -62,7 +62,7 @@ select {
 }
 
 a {
-  color: #2c2d2a;
+  color: var(--main);
   text-decoration: none;
 }
 
@@ -72,13 +72,14 @@ body {
   font-size: 0.938rem;
   font-family: "Montserrat", sans-serif;
   color: var(--main);
+  margin: 0 auto;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
-  padding: 15px 20px;
+  padding: 15px 20px 0 20px;
 }
 
 
@@ -100,6 +101,7 @@ body {
   font-size: 1.375rem;
   text-transform: uppercase;
   letter-spacing: 4px;
+  font-weight: bold;
 }
 
 .logo:hover {
@@ -248,7 +250,7 @@ body {
 }
 
 .about__text {
-  max-width: 670px;
+  max-width: auto;
   margin-right: 35px;
 }
 
@@ -257,7 +259,7 @@ body {
 }
 
 .about__img {
-  max-width: 250px;
+  max-width: 300px;
 }
 
 .about__img img {
@@ -361,6 +363,7 @@ body {
   border: 2px solid var(--main);
   padding: 30px;
   margin: 30px;
+  position: relative;
 }
 
 .mockup {
@@ -382,12 +385,153 @@ body {
 
   .work__h1 {
     font-size: 2.4rem;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .work__h1 {
     font-size: 2rem;
+  }
+}
+
+.contact__h1 {
+  font-size: 2.7rem;
+}
+
+.contact__ct {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.contact__text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  max-width: 600px;
+  width: 100%;
+  margin-right: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.contact__form {
+  text-align: right;
+  max-width: auto;
+  width: 100%;
+  margin-left: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form_control {
+  padding: 15px;
+  margin: 20px 0;
+  border: 1px solid var(--main);
+  border-radius: 0;
+}
+
+.form_control:focus {
+  outline: 2px solid var(--main);
+}
+
+form textarea {
+  height: 150px;
+}
+
+.contact__submit_cta {
+  color: var(--bg);
+  background-color: var(--main);
+  border: 1px solid var(--main);
+  max-width: 300px;
+  padding: 15px 30px;
+  text-align: center;
+  display: block;
+  border-radius: 0;
+}
+
+.contact__submit_cta:hover {
+  color: var(--main);
+  background-color: transparent;
+  border: 1px solid var(--main);
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+  left: 300px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .contact__ct {
+    flex-direction: column;
+  }
+  .contact__form {
+    margin: 0;
+  }
+  .contact__submit_cta {
+    max-width: auto;
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width:570px) {
+  .contact__text {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
+
+footer {
+  margin-top: 20px;
+}
+
+.footer__text {
+  padding: 20px ;
+  border-top: 1px solid var(--main);
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text a {
+  text-decoration: underline;
+}
+
+
+.btop {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  z-index: 99;
+  border: 1px solid var(--main);
+  background-color: transparent;
+  color: var(--main);
+  cursor: pointer;
+  padding: 6.8px 12px;
+  border-radius: none;
+  font-size: 1rem;
+}
+
+.btop:hover {
+  background-color: var(--main);
+  color: var(--bg);
+}
+
+@media screen and (max-width: 768px) {
+  .btop {
+    bottom: 70px;
+    right: 15px;
+    padding: 5px 9.5px;
+    background-color: var(--main);
+    color: var(--bg);
+    opacity: 0.50;
   }
 }

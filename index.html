@@ -7,6 +7,11 @@
   <title>home / bachitter</title>
   <link rel="stylesheet" href="/style.css">
   <script src="https://kit.fontawesome.com/6aff6d09db.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
 </head>
 <body>
 
@@ -35,7 +40,7 @@
           <div class="h-text">
             <h1>Hi, <br> I'm Bachitter, <br> a web developer.</h1>
             <p>front-end web developer, coffee addict, gamer & business student. <br> currently residing in Vancouver,CA.</p>
-            <a href="#contact" class="hero-cta">Contact Me</a>
+            <a href="#contact" class="hero-cta">Let's Talk</a>
           </div>
     </div>
   </section>
@@ -47,7 +52,7 @@
       <div class="about__ct">
         <div class="about__text">
           <p class="ab_p">
-            A short intro about me. I'm a college student from India currently living in Canada. I learned web development from online resources and tutorials. I have a responsive web design certificate from 
+            A short intro about me. I'm a college student from India currently living in Canada. I learned web development from online resources and tutorials. I have received a responsive web design certificate from 
             <a class="ab_link" href="https://www.freecodecamp.org/certification/bachitter/responsive-web-design" rel="nofollow" target="blank">freeCodeCamp</a>.
             <br>
             Interested to chat or wanna collaborate for a future project, reach out by <a class="ab_link" href="mailto:bachittersc@gmail.com">email</a>.
@@ -60,11 +65,11 @@
         <div class="socials">
           <h2 class="socials__h2">Socials</h2>
           <div class="social__links">
-            <a class="fab fa-github socials_link" href="https://github.com/bachitter"></a>
-          <a class="fab fa-twitter socials_link" href="https://twitter.com/bachitter_ch"></a>
-          <a class="fab fa-instagram socials_link" href="https://www.instagram.com/bachitter_ch/"></a>
-          <a class="fab fa-youtube socials_link" href="https://www.youtube.com/channel/UCZCY1ABtF0rKBsIp4KFKhlQ"></a>
-          <a class="fab fa-twitch socials_link" href="https://www.twitch.tv/bachitter"></a>
+            <a class="fab fa-github socials_link" target="blank" href="https://github.com/bachitter"></a>
+          <a class="fab fa-twitter socials_link" target="blank" href="https://twitter.com/bachitter_ch"></a>
+          <a class="fab fa-instagram socials_link" target="blank" href="https://www.instagram.com/bachitter_ch/"></a>
+          <a class="fab fa-youtube socials_link" target="blank" href="https://www.youtube.com/channel/UCZCY1ABtF0rKBsIp4KFKhlQ"></a>
+          <a class="fab fa-twitch socials_link" target="blank" href="https://www.twitch.tv/bachitter"></a>
           </div>
         </div>
         <div class="skills">
@@ -87,10 +92,10 @@
               <h3 class="project__h3">Huddle Landing Page</h3>
               <span>Frontend Mentor Challenge - 2021</span>
               <div class="mockup">
-                <img src="/images/huddle-landing-page.png" alt="huddle-landing-page">
+                <a href="https://github.com/bachitter/huddle-webpage" target="blank"><img src="/images/huddle-landing-page.png" alt="huddle-landing-page"></a>
               </div>
             </div>
-            <div class="project">
+            <div onmouseover="lock()" class="project">
               <h3 class="project__h3">My Website</h3>
               <span>Design and Development - 2021</span>
               <div class="mockup">
@@ -101,7 +106,45 @@
         </div>
       </div>
     </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h1 class="contact__h1">Contact</h1>
+        <div class="contact__ct">
+          <div class="contact__text">
+          <div>
+          <p>Wanna collaborate or just wanna say hello?</p>
+          <p>Drop your message here.</p>
+          </div>
+          <div class="arrow">
+            <img src="/images/arrow.svg" alt="arrow">
+          </div>
+          </div>
+          <div class="contact__form">
+            <form action="https://formsubmit.co/el/fevefu" method="post">
+              <input class="form_control" type="text" id="con_name" name="yourname" placeholder="Your Name" required>
+
+              <input class="form_control" type="email" name="youremail" id="con_email" placeholder="Your Email" required>
+
+              <textarea class="form_control" id="con_message" name="message" placeholder="Your Message" required></textarea>
+
+              <button class="contact__submit_cta" type="submit">Send Message</button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer__text">
+          <p>Designed and coded by <a href="#about">me</a> with ❤️.</p>
+        </div>
+      </div>
+    </footer>
   </div>
+  <button onclick="topFunction()" class="btop" id="btop" title="Go to top"><i class="fas fa-chevron-up"></i></button>
 </body>
 <script async src="/script.js"></script>
 </html>
